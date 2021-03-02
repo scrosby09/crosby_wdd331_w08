@@ -66,18 +66,18 @@
 
 @supports not (display: grid) {
   // Variables
-  $num-columns: 8;
-  $one-column: 100% / $num_columns;
+  $column-count: 8;
+  $column-1: 100% / $column-count;
   $loop-start: 1;
-  $loop-end: $num-columns + 1;
+  $loop-end: $column-count + 1;
 
   // Mixins
   @mixin span($span-num) {
-    flex: 0 0 $one-column * $span-num;
+    flex: 0 0 $column-1 * $span-num;
   }
 
   @mixin offset($offset-num) {
-    margin-left: $one-column * $offset-num;
+    margin-left: $column-1 * $offset-num;
   }
 
   // Flex Span Classes
@@ -94,10 +94,10 @@
 }
 
 // Variables Card Shape and Size Pips
-$card-width: 40vw;
-$card-height: $card-width * 1.4;
-$font-size-number: $card-width * 0.1;
-$icon-size: $card-width / 5;
+$card-wd: 40vw;
+$card-ht: $card-wd * 1.4;
+$text-size: $card-wd * 0.1;
+$icon-size: $card-wd / 5;
 
 *,
 *:before,
@@ -109,12 +109,12 @@ $icon-size: $card-width / 5;
 
 // Card Outline
 .card {
-  border: 1px solid grey;
-  height: $card-height;
-  width: $card-width;
+  border: 1px solid darkslategray;
+  height: $card-ht;
+  width: $card-wd;
   border-radius: 10px;
   margin: 20px;
-  box-shadow: 2px 2px 4px grey;
+  box-shadow: 2px 2px 4px black;
 }
 
 .card-front {
@@ -129,7 +129,7 @@ $icon-size: $card-width / 5;
 
 .number {
   text-align: center;
-  font-size: $font-size-number;
+  font-size: $text-size;
 
   & > .icon {
     width: $icon-size * 0.5;

@@ -30,38 +30,38 @@
     grid-column-end: span 8;
   }
 
-  .colstart-1 {
+  .col-1 {
     grid-column-start: 1;
   }
 
-  .colstart-2 {
+  .col-2 {
     grid-column-start: 2;
   }
 
-  .colstart-6 {
+  .col-6 {
     grid-column-start: 6;
   }
 
-  .colstart-8 {
+  .col-8 {
     grid-column-start: 8;
   }
 
-  .rowstart-1 {
+  .row-1 {
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
-  .rowstart-2 {
+  .row-2 {
     grid-row-start: 2;
     grid-row-end: 3;
   }
 
-  .rowstart-3 {
+  .row-3 {
     grid-row-start: 3;
     grid-row-end: 4;
   }
 
-  .rowstart-4 {
+  .row-4 {
     grid-row-start: 4;
     grid-row-end: 5;
   }
@@ -112,12 +112,12 @@
 }
 
 .card {
-  border: 1px solid grey;
+  border: 1px solid darkslategray;
   height: 56vw;
   width: 40vw;
   border-radius: 10px;
   margin: 20px;
-  box-shadow: 2px 2px 4px grey;
+  box-shadow: 2px 2px 4px black;
 }
 
 .card-front {
